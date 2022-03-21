@@ -30,7 +30,7 @@ export default MovieCollection
 
 const Container = styled.section`
     position: absolute;
-    width: 1552px;
+    width: 100vw;
     height: 349px;
     left: 30px;
     top: ${({ collection }) => collection ? '1000px' : '830px'};

@@ -16,7 +16,7 @@ export default Hero
 
 const HeroContainer = styled.section`
     position: absolute;
-    width: 1440px;
+    width: 100vw;
     height: 550px;
     left: 0px;
     top: 138px;
