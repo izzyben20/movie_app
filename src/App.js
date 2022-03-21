@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        /* position: relative; */
+        overflow-x: auto;
     }
 `
 

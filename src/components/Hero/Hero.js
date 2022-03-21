@@ -23,6 +23,12 @@ const HeroContainer = styled.section`
     display: flex;
     align-items: center;
     background-image: url(${hero});
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 `
 
 const Text = styled.h2`

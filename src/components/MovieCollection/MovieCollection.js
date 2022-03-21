@@ -1,10 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const MovieCollection = ({ movies, search }) => {
+const MovieCollection = ({ movies, search, collection }) => {
+    console.log(movies.Search)
 
   return (
     <Container>
+        <CategoryHeading>{search && search}</CategoryHeading>
+        <MoviesContainer>
+            {movies.Search && movies.Search.map(movie => (
+                <Movie key={movie.imdbID}>
+                <MovieTitle>{movie.Title}</MovieTitle>
+                </Movie>
+            ))}
+        </MoviesContainer>
         <CategoryHeading>{search && search}</CategoryHeading>
         <MoviesContainer>
             {movies.Search && movies.Search.map(movie => (
@@ -24,7 +33,7 @@ const Container = styled.section`
     width: 1552px;
     height: 349px;
     left: 30px;
-    top: 830px;
+    top: ${({ collection }) => collection ? '1000px' : '830px'};
 `
 
 const CategoryHeading = styled.h4`
