@@ -22,12 +22,11 @@ const HeroContainer = styled.section`
     top: 138px;
     display: flex;
     align-items: center;
-    background-image: url(${hero});
+    background: url(${hero}) no-repeat;
+    /* background-size: contain;  */
 
     @media screen and (max-width: 768px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 100vw;
     }
 `
 
@@ -42,6 +41,12 @@ const Text = styled.h2`
     font-size: 72px;
     line-height: 94px;
     letter-spacing: -0.05em;
-
     color: #FFFFFF;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      left: 0;
+      width: 100%;
+      margin: 0 auto;
+    }
 `

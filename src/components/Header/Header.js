@@ -22,6 +22,13 @@ const HeaderSection = styled.header`
     left: 0px;
     top: 0px;
     background: #292929;
+
+    @media screen and (max-width: 768px) {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 `
 
 const LogoContainer = styled.div`
@@ -36,6 +43,11 @@ const LogoContainer = styled.div`
 
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
+
+    @media screen and (max-width: 768px) {
+      left: 0;
+      top: 0;
+    }
 `
 
 const Text = styled.h1`

@@ -10,7 +10,7 @@ const MovieCollection = ({ movies, search, collection }) => {
         <MoviesContainer>
             {movies.Search && movies.Search.map(movie => (
                 <Movie key={movie.imdbID}>
-                <MovieTitle>{movie.Title}</MovieTitle>
+                    <MovieTitle>{movie.Title}</MovieTitle>
                 </Movie>
             ))}
         </MoviesContainer>
@@ -18,7 +18,7 @@ const MovieCollection = ({ movies, search, collection }) => {
         <MoviesContainer>
             {movies.Search && movies.Search.map(movie => (
                 <Movie key={movie.imdbID}>
-                <MovieTitle>{movie.Title}</MovieTitle>
+                    <MovieTitle>{movie.Title}</MovieTitle>
                 </Movie>
             ))}
         </MoviesContainer>

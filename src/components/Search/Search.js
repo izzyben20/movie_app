@@ -23,11 +23,16 @@ const Container = styled.section`
     margin-left: 30px;
     padding-bottom: 100px;
     top: 700px;
+    width: 50vw;
+
+    @media screen and (max-width: 768px) {
+      width: 100vw !important;
+    }
 `
 
 const Input = styled.input`
     position: absolute;
-    width: 1306px;
+    width: 95vw;
     height: 54px;
     left: 0px;
     top: 35px;
@@ -37,7 +42,7 @@ const Input = styled.input`
     order: 1;
     flex-grow: 0;
     margin: 4px 0px;
-
+    
     @media screen and (max-width: 768px) {
         width: 90vw;
     }
