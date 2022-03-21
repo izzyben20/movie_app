@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const MovieCollection = ({ movies }) => {
-    console.log(movies.Search)
+const MovieCollection = ({ movies, search }) => {
+
   return (
     <Container>
-        <CategoryHeading>Heading</CategoryHeading>
+        <CategoryHeading>{search && search}</CategoryHeading>
         <MoviesContainer>
-            {movies?.Search.map(movie => (
+            {movies.Search && movies.Search.map(movie => (
                 <Movie key={movie.imdbID}>
                 <MovieTitle>{movie.Title}</MovieTitle>
                 </Movie>
@@ -42,6 +42,10 @@ const MoviesContainer = styled.div`
     padding: 10px;
     position: static;
     gap: 13px;
+
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+    }
     
 `
 

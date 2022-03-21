@@ -25,7 +25,6 @@ const App = () => {
     console.log(movies)
 
     useEffect(() => {
-        // const url = `http://www.omdbapi.com/?i=tt3896198&apikey=559b5757`
         const url = `http://www.omdbapi.com/?s=${search}&apikey=559b5757`
         
 
@@ -45,7 +44,7 @@ const App = () => {
         <Header />
         <Hero />
         <Search search={search} setSearch={setSearch} />
-        <MovieCollection movies={movies} />
+        <MovieCollection movies={movies} search={search}/>
         
     </>
   )
